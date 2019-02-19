@@ -66,14 +66,36 @@ que le fichier continue d'être incrémenté avec votre petit script bash qui co
 ```nohup commande &&```
 ou autre combinaison de disown et &.
 
-Passons à autre chose :
-```
-tmux kill-session
-```
 ### Configuration de votre tmux
-Tmux lit un fichier "caché" situé sur votre "home" : ~/.tmux.conf
+Tmux lit un fichier "caché" situé sur votre "home" : 
 
-Ce fichier vous permet de customiser votre tmux. Il est même nécessaire d'en utiliser un pour remplacer certaines commande par défaut de tmux, peu pratiques. Copiez le contenu du .tmux.conf de ce github dans votre ~/.tmux.conf
+**~/.tmux.conf**
+
+Ce fichier vous permet de customiser votre tmux. Il est même nécessaire d'en utiliser un pour remplacer certaines commande par défaut peu pratiques. Copiez le contenu du .tmux.conf de ce github dans votre ~/.tmux.conf
+
+### Deuxième prise en main
+
+Sur un terminal, créez une session tmux appelée *second* 
+```
+tmux new -s second
+```
+
+Afin d'executer des commandes Tmux, il faut commencer par utiliser le préfixe **Crtl + a**.
+Ce préfixe a été changé dans le fichier de configuration. Il est nécessaire de presser ce prefixe afvant de pouvoir lancer le reste des commandes
+
+'''
+[prefix] + c
+[prefix] + n
+[prefix] + P
+[prefix] + _
+[prefix] + |
+[prefix] + UP
+[prefix] + DOWN
+[prefix] + LEFT
+[prefix] + RIGHT
+[prefix] + f + ENTER
+[prefix] + x
+'''
 
 
 
@@ -83,6 +105,8 @@ https://pmihaylov.com/tmux-terminal-multiplexer/
 
 https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
 
+Petit tuto sur les fichier.conf de Tmux qui regroupe la plupart des raccourcis du fichier de configuration de ce tuto
+https://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/
 
 Github page with lots of links on tmux
 
