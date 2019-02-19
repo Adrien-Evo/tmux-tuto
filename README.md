@@ -1,6 +1,8 @@
 # tmux-tuto
 
-Ce tuto a pour but de vous familiariser avec Tmux. Pourquoi utiliser cet outil, comment le mettre en place et comment l'utiliser.
+Ce tuto a pour but de vous faire découvrir Tmux.
+Pourquoi utiliser cet outil, comment le mettre en place et comment l'utiliser.
+Vous trouverez des certainement des personnes pour vous expliquer que TMux
 
 ## What is TMUX ?
 
@@ -17,30 +19,29 @@ Tmux est un multiplexeur de terminal. Il permet de gérer plusieurs sessions et 
 Si vous vous reconnaissez dans au moins une de ces catégories, Tmux est fait pour vous. 
 
 
-##Comment utiliser TMUX :
+## Comment utiliser TMUX :
 ### Installation
-Sur linux, ouvrez un terminal et :
+Sur linux, ouvrez un terminal :
 ```
 sudo apt-get install tmux
 ```
 
-Sur le cluster:
+Sur le cluster bird:
 ```
 module load tmux
 ```
 
-###Première prise en main
-Sur un terminal :
+### Première prise en main
 
-Vous créer une session tmux appelée *first* . (*-s* est pour session)
+Sur un terminal, créez une session tmux appelée *first* (*-s* est pour session)
 ```
 tmux new -s first
 ```
-Détachons maintenant cette session Tmux
+Détachons maintenant cette session Tmux. Nous revenons sur le terminal standard.
 ```
 tmux detach
 ```
-TMux ls vous indique les sessions tmux actives :
+*Tmux ls* vous indique les sessions Tmux actives :
 
 ```
 tmux ls
@@ -49,23 +50,30 @@ On peut ré-attacher la session *first* avec tmux attach -t (pour target)
 ```
 tmux attach -t first
 ```
-Maintenant un petit test pour illustrer une des fonctionnalités de tmux. lancé cette commande directement après avoir attaché votre session first
-'''
+Maintenant un petit test pour illustrer une des fonctionnalités de tmux. Lancez cette commande directement après avoir attaché votre session first
+
+```
 for i in {1..100};do sleep 1s;echo "tmux $i" >> testtmux.txt;done
 ```
-Maintenant vous pouvez fermer votre fenêtre en cliquant sur la croix de votre fenetre
+Maintenant vous pouvez fermer votre fenêtre en cliquant sur la croix de votre fenêtre.
 
-Rouvrez un terminal et vous pouvez constater
-Vous pouvez constater avec wc -l testtmux.Txt que le fichier continue d'être incrémenter avec votre petit script bash qui tourne sur votre session tmux. Et ceci malgré la fermeture brutale du terminal
+Rouvrez un terminal et vous pouvez constater avec 
+```
+wc -l testtmux.txt
+```
 
+que le fichier continue d'être incrémenté avec votre petit script bash qui continue de tourner sur votre session tmux. Et ceci malgré la fermeture brutale du terminal. Plus efficace que :
+```nohup commande &&```
+ou autre combinaison de disown et &.
+
+Passons à autre chose :
+```
 tmux kill-session
-
-###Configuration de votre tmux
+```
+### Configuration de votre tmux
 Tmux lit un fichier "caché" situé sur votre "home" : ~/.tmux.conf
 
-Ce fichier vous permet de customiser votre tmux. Il est même nécessaire d'en utiliser un pour remplacer certaines commande par défaut de tmux qui sont peu pratique
-
-Copiez le contenu du .tmux.conf de ce github dans votre ~/.tmux.conf
+Ce fichier vous permet de customiser votre tmux. Il est même nécessaire d'en utiliser un pour remplacer certaines commande par défaut de tmux, peu pratiques. Copiez le contenu du .tmux.conf de ce github dans votre ~/.tmux.conf
 
 
 
@@ -77,10 +85,14 @@ https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
 
 
 Github page with lots of links on tmux
+
 https://github.com/rothgar/awesome-tmux
 
+Tao of Tmux
+https://tmuxp.git-pull.com/en/latest/about_tmux.html
 
 Config super technique
+
 https://github.com/samoshkin/tmux-config
 
 Une autre config super technique
