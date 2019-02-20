@@ -9,7 +9,6 @@ Vous trouverez des certainement des personnes pour vous expliquer que TMux
 Tmux est un multiplexeur de terminal. Il permet de gérer plusieurs sessions et fenêtres dans un même terminal.
 
 
-![alt text](https://raw.githubusercontent.com/Adrien-Evo/tmux-tuto/master/tmux-multi.png)
 ## Why TMUX ?
 
 - Vous travaillez régulièrement sur un terminal.
@@ -65,16 +64,16 @@ Rouvrez un terminal et vous pouvez constater avec
 wc -l testtmux.txt
 ```
 
-que le fichier continue d'être incrémenté avec votre petit script bash qui continue de tourner sur votre session tmux. Et ceci malgré la fermeture brutale du terminal. Plus efficace que :
-```nohup commande &&```
-ou autre combinaison de disown et &.
+que le fichier testtmux.txt continue d'être incrémenté grace à votre petit script bash qui tourne sur votre session tmux :astonished:. Et ceci malgré la fermeture brutale du terminal. Plus efficace que `nohup commande &&` ou autre combinaison de `disown` et `&`.
 
 ### Configuration de votre tmux
 Tmux lit un fichier "caché" situé sur votre "home" : 
 
 **~/.tmux.conf**
 
-Ce fichier vous permet de customiser votre tmux. Il est même nécessaire d'en utiliser un pour remplacer certaines commande par défaut peu pratiques. Copiez le contenu du .tmux.conf de ce github dans votre ~/.tmux.conf
+Ce fichier vous permet de customiser votre tmux. Il est même nécessaire d'en utiliser un pour remplacer certaines commande par défaut peu pratiques. 
+
+:point_right: Déplacer le .tmux.conf de ce github dans votre ~/.tmux.conf
 
 ### Deuxième prise en main
 
@@ -84,7 +83,7 @@ tmux new -s second
 ```
 
 Afin d'executer des commandes Tmux, il faut commencer par utiliser le préfixe **Ctrl + a**.
-Ce préfixe a été changé dans le fichier de configuration (**Ctrl +b**). Il est nécessaire de presser ce préfixe avant de pouvoir lancer le reste des commandes
+Ce préfixe a été changé dans le fichier de configuration (*initialement* **Ctrl + b**). Il est nécessaire de presser ce préfixe avant de pouvoir lancer le reste des commandes.
 
 Ici nous allons créer une nouvelle fenêtre, naviguer entre les deux fenêtres, créer des panneaux latéral et horizontal, les lister et tuer une fenêtre:
 ```
