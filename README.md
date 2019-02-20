@@ -66,7 +66,7 @@ wc -l testtmux.txt
 
 que le fichier testtmux.txt continue d'être incrémenté grace à votre petit script bash qui tourne sur votre session tmux :astonished:. Et ceci malgré la fermeture brutale du terminal. Plus efficace que `nohup commande &&` ou autre combinaison de `disown` et `&`.
 
-### Configuration de votre tmux
+## Configuration de votre tmux
 Tmux lit un fichier "caché" situé sur votre "home" : 
 
 **~/.tmux.conf**
@@ -74,6 +74,8 @@ Tmux lit un fichier "caché" situé sur votre "home" :
 Ce fichier vous permet de customiser votre tmux. Il est même nécessaire d'en utiliser un pour remplacer certaines commande par défaut peu pratiques. 
 
 :point_right: Déplacer le .tmux.conf de ce github dans votre ~/.tmux.conf
+
+Ce fichier de configuration est assez simple et regroupe des pratiques très courante chez les utilisateurs de Tmux. La deuxième prise en main va illustrer quelques-unes des commandes incluses dans ce fichier de configuration.
 
 ### Deuxième prise en main
 
