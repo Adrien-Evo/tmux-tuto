@@ -106,7 +106,7 @@ Ici nous allons créer une nouvelle fenêtre, naviguer entre les deux fenêtres,
 
 ## Copier coller :
 
-Une façon saine de copier coller peut se faire en maintenant SHIFT et en selectionant avec la souris. Puis clic milieu tout en maintenant shift ou l'on veut coller. Simple, efficace et utilise le clipboard système (copier coller dans tmux et hors tmux possible)
+Une façon saine de copier coller peut se faire en maintenant SHIFT et en sélectionnant avec la souris. Puis clic milieu tout en maintenant shift ou l'on veut coller. Simple, efficace et utilise le clipboard système (copier coller dans tmux et hors tmux possible)
 
 ## Liens divers et variés
 
