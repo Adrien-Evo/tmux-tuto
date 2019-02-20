@@ -87,7 +87,7 @@ Afin d'executer des commandes Tmux, il faut commencer par utiliser le préfixe *
 Ce préfixe a été changé dans le fichier de configuration (**Ctrl +b**). Il est nécessaire de presser ce préfixe avant de pouvoir lancer le reste des commandes
 
 Ici nous allons créer une nouvelle fenêtre, naviguer entre les deux fenêtres, créer des panneaux latéral et horizontal, les lister et tuer une fenêtre:
-'''
+```
 [prefix] + c
 [prefix] + n
 [prefix] + P
@@ -99,7 +99,7 @@ Ici nous allons créer une nouvelle fenêtre, naviguer entre les deux fenêtres,
 [prefix] + RIGHT
 [prefix] + w
 [prefix] + x
-'''
+```
 
 ![alt text](https://raw.githubusercontent.com/Adrien-Evo/tmux-tuto/master/tmux.gif)
 
