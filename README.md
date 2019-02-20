@@ -121,7 +121,6 @@ Tuto en 5 partie
 https://medium.freecodecamp.org/tmux-in-practice-series-of-posts-ae34f16cfab0
 
 Github page with lots of links on tmux
-
 https://github.com/rothgar/awesome-tmux
 
 Tao of Tmux
