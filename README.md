@@ -101,7 +101,7 @@ Ici nous allons créer une nouvelle fenêtre, naviguer entre les deux fenêtres,
 [prefix] + x
 '''
 
-![alt text](https://raw.githubusercontent.com/Adrien-Evo/tmux-tuto/master/tmux.gfi)
+![alt text](https://raw.githubusercontent.com/Adrien-Evo/tmux-tuto/master/tmux.gif)
 
 
 
