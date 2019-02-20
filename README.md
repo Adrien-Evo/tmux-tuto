@@ -2,11 +2,10 @@
 
 Ce tuto a pour but de vous faire découvrir Tmux.
 Pourquoi utiliser cet outil, comment le mettre en place et comment l'utiliser.
-Vous trouverez des certainement des personnes pour vous expliquer que TMux
 
 ## What is TMUX ?
 
-Tmux est un multiplexeur de terminal. Il permet de gérer plusieurs sessions et fenêtres dans un même terminal.
+Tmux est un multiplexeur de terminal. Il permet de gérer plusieurs sessions et fenêtres dans un même terminal. Similaire à l'outil Screen.
 
 
 ## Why TMUX ?
