@@ -7,7 +7,12 @@ Vous trouverez des certainement des personnes pour vous expliquer que TMux
 ## What is TMUX ?
 
 Tmux est un multiplexeur de terminal. Il permet de gérer plusieurs sessions et fenêtres dans un meme terminal.
+Passez de 
 
+![alt text](https://raw.githubusercontent.com/Adrien-Evo/tmux-tuto/master/notmux-multi.png)   
+)
+
+![alt text](https://raw.githubusercontent.com/Adrien-Evo/tmux-tuto/master/tmux-multi.png)
 ## Why TMUX ?
 
 - Vous travaillez régulièrement sur un terminal.
@@ -80,9 +85,10 @@ Sur un terminal, créez une session tmux appelée *second*
 tmux new -s second
 ```
 
-Afin d'executer des commandes Tmux, il faut commencer par utiliser le préfixe **Crtl + a**.
-Ce préfixe a été changé dans le fichier de configuration. Il est nécessaire de presser ce prefixe afvant de pouvoir lancer le reste des commandes
+Afin d'executer des commandes Tmux, il faut commencer par utiliser le préfixe **Ctrl + a**.
+Ce préfixe a été changé dans le fichier de configuration (**Ctrl +b**). Il est nécessaire de presser ce préfixe avant de pouvoir lancer le reste des commandes
 
+Ici nous allons créer une nouvelle fenêtre, naviguer entre les deux fenêtres, créer des panneaux latéral et horizontal, les lister et tuer une fenêtre:
 '''
 [prefix] + c
 [prefix] + n
@@ -93,7 +99,7 @@ Ce préfixe a été changé dans le fichier de configuration. Il est nécessaire
 [prefix] + DOWN
 [prefix] + LEFT
 [prefix] + RIGHT
-[prefix] + f + ENTER
+[prefix] + w
 [prefix] + x
 '''
 
@@ -108,6 +114,12 @@ https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
 Petit tuto sur les fichier.conf de Tmux qui regroupe la plupart des raccourcis du fichier de configuration de ce tuto
 https://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/
 
+Une cheatsheet:
+https://gist.github.com/MohamedAlaa/2961058
+
+Tuto en 5 partie
+https://medium.freecodecamp.org/tmux-in-practice-series-of-posts-ae34f16cfab0
+
 Github page with lots of links on tmux
 
 https://github.com/rothgar/awesome-tmux
@@ -116,7 +128,6 @@ Tao of Tmux
 https://tmuxp.git-pull.com/en/latest/about_tmux.html
 
 Config super technique
-
 https://github.com/samoshkin/tmux-config
 
 Une autre config super technique
