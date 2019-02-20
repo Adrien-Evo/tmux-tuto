@@ -104,6 +104,8 @@ Ici nous allons créer une nouvelle fenêtre, naviguer entre les deux fenêtres,
 
 
 
+## Liens divers et variés
+
 General intro :
 https://pmihaylov.com/tmux-terminal-multiplexer/
 
