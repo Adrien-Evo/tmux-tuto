@@ -6,18 +6,16 @@ Vous trouverez des certainement des personnes pour vous expliquer que TMux
 
 ## What is TMUX ?
 
-Tmux est un multiplexeur de terminal. Il permet de gérer plusieurs sessions et fenêtres dans un meme terminal.
-Passez de 
+Tmux est un multiplexeur de terminal. Il permet de gérer plusieurs sessions et fenêtres dans un même terminal.
 
-![alt text](https://raw.githubusercontent.com/Adrien-Evo/tmux-tuto/master/notmux-multi.png)   
-)
 
 ![alt text](https://raw.githubusercontent.com/Adrien-Evo/tmux-tuto/master/tmux-multi.png)
 ## Why TMUX ?
 
 - Vous travaillez régulièrement sur un terminal.
 - Vous travaillez sur un cluster de calcul via un terminal.
-- Vous vous perdez au milieu de tout vos terminaux
+- Vous vous perdez au milieu de tout vos terminaux :
+![alt text](https://raw.githubusercontent.com/Adrien-Evo/tmux-tuto/master/notmux-multi.png)   
 - Vous voulez impressionner vos collègues
 - Vous adorez être organisé
 
@@ -103,6 +101,7 @@ Ici nous allons créer une nouvelle fenêtre, naviguer entre les deux fenêtres,
 [prefix] + x
 '''
 
+![alt text](https://raw.githubusercontent.com/Adrien-Evo/tmux-tuto/master/tmux.gfi)
 
 
 
